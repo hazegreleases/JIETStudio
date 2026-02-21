@@ -1,0 +1,203 @@
+# ========================================
+# Python
+# ========================================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+
+# Virtual Environments
+env/
+venv/
+.env
+.venv
+ENV/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ========================================
+# IDEs & Editors
+# ========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+
+# ========================================
+# Model Files (YOLO, SAM, etc.)
+# ========================================
+*.pt
+*.pth
+*.onnx
+*.weights
+*.pb
+*.tflite
+*.h5
+*.keras
+*.safetensors
+*.bin
+*.ckpt
+
+# Specific large models in root
+sam2.1_l.pt
+yolo*.pt
+yolov*.pt
+
+# ========================================
+# Project Data & Outputs
+# ========================================
+# User projects (contain images, labels, augmentations)
+projects/
+project_*/
+
+# Data directories
+data/
+datasets/
+images/
+labels/
+augmented/
+
+# Model storage
+models/
+checkpoints/
+weights/
+exports/
+
+# Output directories
+runs/
+results/
+factory/output/
+factory_output/
+synthetic_data/
+renders/
+output/
+
+# ========================================
+# Project Configuration Files
+# ========================================
+# Keep template configs, ignore user-specific ones
+project_config.yaml
+augmentation_config.yaml
+augmentation_pipeline.json
+augmentation_log.txt
+*.local.yaml
+*.local.json
+
+# ========================================
+# Temporary & Cache Files
+# ========================================
+*.log
+*.tmp
+*.temp
+.cache/
+tmp/
+temp/
+
+# ========================================
+# OS-Specific
+# ========================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ========================================
+# Development & Testing
+# ========================================
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+.hypothesis/
+.tox/
+
+# ========================================
+# Documentation Build
+# ========================================
+docs/_build/
+docs/.doctrees/
+site/
+
+# ========================================
+# Project Specific Exclusions
+# ========================================
+# Development artifacts
+bridge/
+simulation/
+task.md
+
+# Custom augmentation filters (user-created)
+app/core/augmentation/filters/libraries/custom/*
+!app/core/augmentation/filters/libraries/custom/__init__.py
+!app/core/augmentation/filters/libraries/custom/.gitkeep
+
+# Personal notes & planning
+notes/
+todo.txt
+planning/
+
+# AI Agent Artifacts
+.gemini/
+brain/
+implementation_plan.md
+walkthrough.md
+task.md
+
+# Documentation
+!.docs/
+
+# ========================================
+# Keep These (Negations)
+# ========================================
+# Keep example configs
+!example_config.yaml
+!config.template.yaml
+
+# Keep documentation
+!README.md
+!LICENSE
+!docs/
+!FILTER_GUIDE.md
+
+# Keep requirements
+!requirements.txt
+!requirements-dev.txt
+
+
+# Remove debug and aug_check scripts
+debug_*.py
+check_augmentations.py
+verify_filters.py
+
+# ========================================
+# Augmentation Artifacts
+# ========================================
+aug_*
+aug_*.jpg
+aug_*.png
+aug_*.txt

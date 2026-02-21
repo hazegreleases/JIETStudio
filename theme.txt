@@ -1,0 +1,11 @@
+window_bg_color=#FFFFFF
+window_text_color=#333333
+button_bg_color=#067BC2
+button_hover_color=#CAC4CE
+button_click_color=#22223B
+button_text_color=#FFFFFF
+font_family=Inter
+font_size_normal=10
+font_size_large=12
+font_size_header=24
+inspector_non_labeled_color=#FFCCCC
