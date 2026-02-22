@@ -31,10 +31,11 @@ class YOLOWrapper:
         verified_bg_imgs = []
         
         for img_file in all_imgs:
-            img_path = os.path.join(self.images_dir, img_file)
+            img_path = os.path.join(self.images_dir, img_file).replace('\\', '/')
             label_file = os.path.splitext(img_file)[0] + ".txt"
             label_path = os.path.join(self.labels_dir, label_file)
             
+
             if os.path.exists(label_path):
                 if os.path.getsize(label_path) > 0:
                     labeled_imgs.append(img_path)
@@ -44,7 +45,10 @@ class YOLOWrapper:
         
         # Shuffle labeled
         random.shuffle(labeled_imgs)
+        if validation_split > 1.0:
+            validation_split = validation_split / 100.0
         split_idx = int(len(labeled_imgs) * (1 - validation_split))
+
         train_labeled = labeled_imgs[:split_idx]
         val_labeled = labeled_imgs[split_idx:]
         
@@ -63,8 +67,8 @@ class YOLOWrapper:
         random.shuffle(train_imgs)
         random.shuffle(val_imgs)
 
-        train_txt = os.path.join(self.data_dir, "train.txt")
-        val_txt = os.path.join(self.data_dir, "val.txt")
+        train_txt = os.path.join(self.data_dir, "train.txt").replace('\\', '/')
+        val_txt = os.path.join(self.data_dir, "val.txt").replace('\\', '/')
 
         with open(train_txt, "w") as f:
             f.write("\n".join(train_imgs))

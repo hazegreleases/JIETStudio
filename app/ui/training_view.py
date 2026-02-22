@@ -195,7 +195,6 @@ class TrainingView(tk.Frame):
             ("DFL Loss Gain", "dfl", 1.5),
             ("Mosaic (0.0-1.0)", "mosaic", 1.0),
             ("Mixup (0.0-1.0)", "mixup", 0.0),
-            ("Blur (0.0-1.0)", "blur", 0.0)
         ]
         
         row = 0
