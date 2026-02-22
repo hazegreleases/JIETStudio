@@ -281,17 +281,17 @@ class TrainingView(tk.Frame):
             hyperparams = {k: v.get() for k, v in self.hyper_vars.items()}
 
             self.console_text.insert(tk.END, f"Preparing dataset (BG Ratio: {bg_ratio:.1%})...\n")
-            train_txt, val_txt = self.yolo_wrapper.prepare_dataset(val_split, bg_ratio=bg_ratio)
+            train_txt, val_txt = self.yolo_wrapper.prepare_dataset(self.val_split_var.get(), bg_ratio=bg_ratio)
             
             self.console_text.insert(tk.END, "Generating config...\n")
             data_yaml = self.yolo_wrapper.generate_yaml(classes, train_txt, val_txt)
             
-            self.console_text.insert(tk.END, f"Starting training with {model_name} (Resume: {resume})...\n")
+            self.console_text.insert(tk.END, f"Starting training with {self.model_var.get()} (Resume: {resume})...\n")
             self.start_btn.config(state="disabled")
             self.stop_btn.config(state="normal")
-            self.yolo_wrapper.train_model(model_name, data_yaml, epochs, batch, imgsz, 
-                                          callback=self.on_training_complete, half=half, 
-                                          workers=workers, resume=resume, **hyperparams)
+            self.yolo_wrapper.train_model(self.model_var.get(), data_yaml, epochs, batch, imgsz, 
+                                          callback=self.on_training_complete, half=self.half_var.get(), 
+                                          workers=self.workers_var.get(), resume=resume, **hyperparams)
             
         except Exception as e:
             messagebox.showerror("Error", str(e))
