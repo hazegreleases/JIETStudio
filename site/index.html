@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JIET Studio - The Professional Computer Vision Suite</title>
+    <meta name="description"
+        content="A high-performance, modular environment designed for professional-grade YOLO training, dataset management, and real-time inference.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Local Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Background Orbs for Premium Aesthetic -->
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fa-solid fa-layer-group"></i> JIET<span>Studio</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#quickstart">Quick Start</a>
+                <a href="https://github.com/hazegreleases/JIETStudio" target="_blank" class="github-btn">
+                    <i class="fa-brands fa-github"></i> View on GitHub
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container hero-content">
+            <div class="badge fade-in-up">🌟 The Modern CV Suite</div>
+            <h1 class="fade-in-up delay-1">The Professional <br><span class="gradient-text">Computer Vision</span> Suite
+            </h1>
+            <p class="hero-description fade-in-up delay-2">
+                A high-performance, modular environment designed for professional-grade YOLO training, dataset
+                management, and real-time inference. Engineered for speed and precision, it streamlines the entire
+                computer vision workflow from raw data to production-ready models.
+            </p>
+            <div class="hero-cta fade-in-up delay-3">
+                <a href="#features" class="btn btn-primary">Explore Features</a>
+                <a href="https://github.com/hazegreleases/JIETStudio" target="_blank" class="btn btn-secondary"><i
+                        class="fa-brands fa-github"></i> GitHub Repository</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section / The Flow Suite -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>The Flow Suite</h2>
+                <p>Experience a seamless end-to-end pipeline with our specialized toolset.</p>
+            </div>
+
+            <div class="grid">
+                <!-- FlowLabeler -->
+                <div class="card reveal hover-glowing">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-pen-nib"></i>
+                    </div>
+                    <h3>FlowLabeler</h3>
+                    <p class="card-subtitle">The Precision Labeling Engine.</p>
+                    <p>A high-velocity annotation tool supporting Edit, Draw, and Magic Wand (SAM-powered) modes.
+                        Designed for rapid, accurate data labeling with zero-friction workflows.</p>
+                </div>
+
+                <!-- ApexTrainer -->
+                <div class="card reveal hover-glowing delay-1">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-server"></i>
+                    </div>
+                    <h3>ApexTrainer</h3>
+                    <p class="card-subtitle">Professional Training Orchestrator.</p>
+                    <p>A robust interface for training YOLO models. Features real-time progress parsing, advanced
+                        hyperparameter tuning (Mosaic, Mixup, Blur), and one-click resumption.</p>
+                </div>
+
+                <!-- ForgeAugment -->
+                <div class="card reveal hover-glowing delay-2">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3>ForgeAugment</h3>
+                    <p class="card-subtitle">Modular Data Synthesis.</p>
+                    <p>A dynamic augmentation pipeline that allows for complex, multi-stage image transformations using
+                        a modular filter-loading system.</p>
+                </div>
+
+                <!-- InsightEngine -->
+                <div class="card reveal hover-glowing">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <h3>InsightEngine</h3>
+                    <p class="card-subtitle">Real-Time Vision Analytics.</p>
+                    <p>A versatile inference engine for real-time model validation. Supports single images, batch
+                        folders, video files, and live webcam streams.</p>
+                </div>
+
+                <!-- LoomSuite -->
+                <div class="card reveal hover-glowing delay-1">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-cubes"></i>
+                    </div>
+                    <h3>LoomSuite</h3>
+                    <p class="card-subtitle">Dataset Utility Fabric.</p>
+                    <p>Essential tools for dataset hygiene, including specialized Health Checks, class distribution
+                        analysis, and intelligent video frame extraction.</p>
+                </div>
+
+                <!-- VerdictHub -->
+                <div class="card reveal hover-glowing delay-2">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3>VerdictHub</h3>
+                    <p class="card-subtitle">Model Validation Dashboard.</p>
+                    <p>A comprehensive evaluation suite providing deep insights into model performance with side-by-side
+                        Ground Truth vs. Prediction visualizations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Start Section -->
+    <section id="quickstart" class="quickstart-section">
+        <div class="container reveal">
+            <div class="quickstart-box">
+                <h2><i class="fa-solid fa-rocket"></i> Quick Start</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Setup Environment</h4>
+                            <div class="code-block">
+                                <code>pip install -r requirements.txt</code>
+                                <button class="copy-btn" title="Copy to clipboard" onclick="copyCode(this)"><i
+                                        class="fa-regular fa-copy"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Launch Studio</h4>
+                            <div class="code-block">
+                                <code>python main.py</code>
+                                <button class="copy-btn" title="Copy to clipboard" onclick="copyCode(this)"><i
+                                        class="fa-regular fa-copy"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Configure Settings</h4>
+                            <p>Visit the global Settings (JIET > Settings) to configure hardware acceleration and
+                                default models.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fa-solid fa-layer-group"></i> JIET<span>Studio</span>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2026 JIET Studio. AGPL-3.0 Licensed.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Local Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>

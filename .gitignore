@@ -141,7 +141,6 @@ htmlcov/
 # ========================================
 docs/_build/
 docs/.doctrees/
-site/
 
 # ========================================
 # Project Specific Exclusions
