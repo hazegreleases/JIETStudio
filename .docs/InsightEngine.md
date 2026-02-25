@@ -1,8 +1,8 @@
-# 👁️ InsightEngine: Vision Analytics Gateway
+# InsightEngine: Vision Analytics Gateway
 
 InsightEngine provides a powerful inference interface for validating your trained YOLO models in real-world scenarios. It bridges the gap between training and deployment by offering versatile testing modes.
 
-## 🔑 Key Features
+## Key Features
 
 - **Multi-Source Support**:
   - **Single Image**: Rapid validation of specific test cases.

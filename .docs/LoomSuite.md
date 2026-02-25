@@ -1,8 +1,8 @@
-# 🧶 LoomSuite: Dataset Utility Fabric
+# LoomSuite: Dataset Utility Fabric
 
 LoomSuite is the foundational toolkit for maintaining dataset integrity. It provides the essential health checks and utilities required to ensure your model's training data is pristine.
 
-## 🔑 Key Features
+## Key Features
 
 - **Dataset Health Scan**:
   - Automatically identifies corrupted images, missing label files, and invalid bounding box formats.

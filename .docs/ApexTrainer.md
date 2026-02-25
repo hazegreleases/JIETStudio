@@ -1,8 +1,8 @@
-# 🚀 ApexTrainer: Professional YOLO Orchestrator
+# ApexTrainer: Professional YOLO Orchestrator
 
 ApexTrainer is the core training module for JIET Studio, providing a high-level interface for the Ultralytics YOLO framework. It simplifies complex training configurations into a streamlined, real-time monitored experience.
 
-## 🔑 Key Features
+## Key Features
 
 - **Real-Time Instrumentation**:
   - **Console Streaming**: Live feedback from the training process.
@@ -14,6 +14,6 @@ ApexTrainer is the core training module for JIET Studio, providing a high-level 
   - **BG Ratio Balancing**: Automatically includes verified background images based on a user-defined ratio to reduce false positives.
   - **Memory Sanitization**: Aggressive VRAM and RAM cleanup post-training to ensure system stability.
 
-## 📂 Run Management
+## Run Management
 
 All training logs, weights (`best.pt`, `last.pt`), and evaluation plots are automatically organized within the project's `runs/` directory, sorted by timestamp for easy retrieval.

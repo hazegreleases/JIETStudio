@@ -1,8 +1,8 @@
-# ⚖️ VerdictHub: Model Validation Dashboard
+# VerdictHub: Model Validation Dashboard
 
 VerdictHub is the definitive evaluation suite for JIET Studio. It transforms raw training metrics into actionable insights, allowing you to objectively verify the quality of your models before deployment.
 
-## 🔑 Key Features
+## Key Features
 
 - **Metrics Dashboard**:
   - **Automated Visualization**: Direct rendering of `results.png` and `confusion_matrix.png` from training runs.
@@ -13,6 +13,6 @@ VerdictHub is the definitive evaluation suite for JIET Studio. It transforms raw
 - **Run Discovery**:
   - Automatically scans your project's `runs/` directory to categorize and display the latest training and validation results.
 
-## 📈 Understanding the Verdict
+## Understanding the Verdict
 
 Use VerdictHub to identify "hard" cases where the model fails (False Negatives) or hallucinates detections (False Positives). This feedback loop is essential for refining your dataset using **FlowLabeler** and **ForgeAugment**.

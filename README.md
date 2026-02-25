@@ -2,7 +2,7 @@
 
 JIET Studio is a high-performance, modular environment designed for professional-grade YOLO training, dataset management, and real-time inference. Engineered for speed and precision, it streamlines the entire computer vision workflow from raw data to production-ready models.
 
-## 🚀 The Flow Suite
+## The Flow Suite
 
 Experience a seamless end-to-end pipeline with our specialized toolset:
 
@@ -18,6 +18,9 @@ A robust interface for training YOLO models. Features real-time progress parsing
 **Modular Data Synthesis.**
 A dynamic augmentation pipeline that allows for complex, multi-stage image transformations using a modular filter-loading system.
 
+ How To Make Custom Filters?
+ [Custom Filter Documentation](docs\custom_filters.md)
+
 ### [InsightEngine](.docs/InsightEngine.md)
 **Real-Time Vision Analytics.**
 A versatile inference engine for real-time model validation. Supports single images, batch folders, video files, and live webcam streams.
@@ -32,11 +35,11 @@ A comprehensive evaluation suite providing deep insights into model performance 
 
 ---
 
-## �️ Quick Start
+## Quick Start
 
 1. **Setup Environment**: `pip install -r requirements.txt`
 2. **Launch**: `python main.py`
 3. **Configure**: Visit the global Settings (JIET > Settings) to configure hardware acceleration and default models.
 
-## ⚖️ License
-[Insert License Information Here]
+## License
+AGPL-3.0
